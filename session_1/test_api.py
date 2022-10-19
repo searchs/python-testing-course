@@ -1,8 +1,9 @@
 import logging
+from pprint import pprint
 
 
 def test_metrics(client):
     rows = client.metrics()
-    print(rows)
-    print("\n\tOTHERS:\n")
+    # TODO: Remove pprint
+    pprint(rows)
     assert len(rows) > 0

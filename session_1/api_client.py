@@ -14,6 +14,10 @@ class APIClient:
         # TODO: connect to host
 
     def metrics(self):
+        """
+
+        :return:
+        """
         # FIXME: Call real server
         return data
 
@@ -21,10 +25,7 @@ class APIClient:
         logging.info('client (%r) closing', self.host)
 
 
-data  = [  {"time":"2021-07-13T14:36:52.380Z","metric":"mem","value":227551548.0},
-]
-
-dataPack = [
+data = [
     {"time":"2021-07-13T14:36:52.380Z","metric":"mem","value":227551548.0},
     {"time":"2021-07-13T14:36:52.380Z","metric":"cpu","value":30.04},
     {"time":"2021-07-13T14:36:53.337Z","metric":"mem","value":227567864.0},

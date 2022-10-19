@@ -5,6 +5,8 @@ import yaml
 
 import splitter
 
+from pprint import pprint
+
 here = Path(__file__).absolute().parent
 
 
@@ -14,6 +16,8 @@ def load_split_cases():
         data = yaml.safe_load(fp)
 
     for tc in data:
+        # TODO: Remove pprint
+        pprint(tc)
         yield tc['size'], tc['chunk_size'], tc['chunks']
 
 
